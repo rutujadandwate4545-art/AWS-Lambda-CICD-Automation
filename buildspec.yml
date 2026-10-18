@@ -1,0 +1,14 @@
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Starting CI/CD build"
+      - echo "Checking application files"
+      - test -f index.html
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - index.html
